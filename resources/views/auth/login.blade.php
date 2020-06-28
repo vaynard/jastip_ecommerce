@@ -15,7 +15,7 @@
 }
 
 .bg-image {
-  background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
+  background-image: url('{{ asset('storefront/img/static_img/test.png') }}');
   background-size: cover;
   background-position: center;
 }

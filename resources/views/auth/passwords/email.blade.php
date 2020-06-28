@@ -14,7 +14,7 @@
 }
 
 .bg-image {
-  background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
+  background-image: url('{{ asset('storefront/img/static_img/forgot-password-concept-illustration_114360-1123.jpg') }}');
   background-size: cover;
   background-position: center;
 }

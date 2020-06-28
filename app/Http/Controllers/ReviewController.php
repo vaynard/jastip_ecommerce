@@ -77,6 +77,6 @@ class ReviewController extends Controller
         $user_data = $this->user->find($request['user_id']);
         Notification::send($user_data, new ReviewNotification($review_data));
         FlashAlert::success('Review Berhasil', 'Review berhasil dipost');
-        return redirect()->back();
+        return redirect('/');
     }
 }

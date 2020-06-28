@@ -5,12 +5,10 @@ Laravel(Framework) : v.7.0,
 Bootstrap : 4.4.1
 Apache : 7.3.12,
 
-
 APP Requirement:
 XAMPP : v.3.2.4 or higher
 PHPMyAdmin : 4.9.2
 Composer : 1.6.4 or higher
-NPM : 6.13.4 or higher
 
 Step by step :
 1.Install NPM , XAMPP , dan Composer jika belum punya
