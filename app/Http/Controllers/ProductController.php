@@ -126,7 +126,7 @@ class ProductController extends Controller
             //get detail data
             $product = $this->product->find($id);
 
-            //var_dump($product->askProduct[0]->reply);
+            //var_dump($product->askProduct->count());
             //exit();
             $related_products = $this->product->where('destination_id', $product->destination_id)->whereDate('arrival_date','>=',now())->orderBy('created_at','asc')->where('is_active', 1)->paginate(6);
             return view('storefront.products.product_detail' , ['product' => $product , 'related_products' => $related_products]);

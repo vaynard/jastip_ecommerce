@@ -134,10 +134,10 @@
 	                    <a id="tab-C" href="#pane-C" class="nav-link" data-toggle="tab" role="tab">Data Kurir</a>
 	                </li>
 	                <li class="nav-item">
-	                    <a id="tab-B" href="#pane-B" class="nav-link" data-toggle="tab" role="tab">Reviews</a>
+	                    <a id="tab-B" href="#pane-B" class="nav-link" data-toggle="tab" role="tab">Reviews ({{$product->user->reviewee->count()}})</a>
 	                </li>
 	                <li class="nav-item">
-	                    <a id="tab-D" href="#pane-D" class="nav-link" data-toggle="tab" role="tab">Tanya Kurir</a>
+	                    <a id="tab-D" href="#pane-D" class="nav-link" data-toggle="tab" role="tab">Tanya Kurir ({{$product->askProduct->count()}})</a>
 	                </li>
 	            </ul>
 	        </div>
@@ -220,7 +220,7 @@
 		                                    <div class="review_content">
 								                <div class="owl-carousel owl-theme prod_pics magnific-gallery">
 								                    <div class="item">
-								                        <a href="{{asset('avatar/'. $product->user->avatar)}}" title="{{$product->user->name}}" data-effect="mfp-zoom-in"><img src="{{asset('avatar/'. $product->user->avatar)}}" alt="{{$product->user->name}}"></a>
+								                        <a href="{{asset('avatar/'. $product->user->avatar)}}" title="{{$product->user->name}}" data-effect="mfp-zoom-in"><img src="{{asset('avatar/'. $product->user->avatar)}}" alt="{{$product->user->name}}" height="300" width="200"></a>
 								                    </div>
 								                    <!-- /item -->
 								                </div>
@@ -366,7 +366,7 @@
 							<ul>
 								<li>
 									<div class="avatar">
-										<img src="{{asset('storefront/img/avatar1.jpg')}}" alt="">
+										<img src="{{asset('avatar/'. $ask->user->avatar)}}" alt="">
 										
 									</div>
 									<div class="comment_right clearfix">

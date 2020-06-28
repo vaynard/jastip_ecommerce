@@ -68,16 +68,23 @@
                 <div class="col-xl-3 col-lg-2 col-md-3">
                     <ul class="top_tools">
                         @guest
+                        <li>
+                            <div class="dropdown dropdown-cart">
+                                <a href="{{route('cart')}}" class="cart_bt"><strong>{{Cart::count()}}</strong></a>
+                                @include('storefront.cart.cart_list_header')
+                            <!-- /dropdown-cart-->
+                        </li>
                         @if (Route::has('register'))
                         <li>
                             <a href="{{ route('register') }}">Daftar</a>
                         </li>
                          @endif
-                         @if (Route::has('register'))
+                         @if (Route::has('login'))
                         <li>
                             <a href="{{route('login')}}">Masuk</a>
                         </li>
                         @endif
+                        
                         @else
                             <li>
                                 <div class="dropdown dropdown-cart">

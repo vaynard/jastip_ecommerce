@@ -132,7 +132,7 @@
                     <h6>
                         {{$curr_user->email}}
                     </h6>
-                    <p class="profile-rating">Rating : <span>{{$curr_user->reviewee->avg('rating')}}/5</span></p>
+                    <p class="profile-rating">Rating : <span>{{floor($curr_user->reviewee->avg('rating'))}}/5</span></p>
                     
                 </div>
             </div>           

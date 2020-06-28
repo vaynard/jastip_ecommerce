@@ -7,6 +7,7 @@ use App\User;
 use App\Product;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Srmklive\FlashAlert\Facades\FlashAlert;
+use Auth;
 
 class CartController extends Controller
 {
@@ -33,6 +34,15 @@ class CartController extends Controller
     {
         //get product data
         $productData = $this->product->find($request->id);
+
+
+        if(Auth::user()){
+            //check if product is not user own
+            if($productData->user->id == Auth::user()->id){
+                FlashAlert::warning('Barang sendiri', 'Anda tidak bisa menambah barang Anda sendiri');
+                return redirect()->back();
+            }
+        }
 
         //check is qty var isset
         if(isset($request->quantity)){

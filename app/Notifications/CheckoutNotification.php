@@ -72,6 +72,7 @@ class CheckoutNotification extends Notification
                 'name' => $this->checkout->user->name,
                 'notification_data' => $this->checkout->user->name."telah menitip barang dengan Order ". $this->checkout->order_id,
                 'url' => "account/my-order/" .$this->checkout->id,
+                'admin_url' => "admin/checkout/detail/" .$this->checkout->id,
             ];
         }
     }
