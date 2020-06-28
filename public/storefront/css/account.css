@@ -1,0 +1,146 @@
+/*============================================================================================*/
+/* ACCOUNT PAGE */
+/*============================================================================================*/
+.box_account {
+  margin-bottom: 25px;
+}
+.box_account h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding-left: 30px;
+  height: 30px;
+  padding-top: 5px;
+  display: inline-block;
+  color: #444;
+}
+.box_account h3.client {
+  background: url(../img/user.svg) center left no-repeat;
+}
+.box_account h3.new_client {
+  background: url(../img/new_user.svg) center left no-repeat;
+}
+.box_account .form_container {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  position: relative;
+}
+.box_account .form_container hr {
+  margin: 0 0 10px 0;
+  border-color: #ededed;
+}
+.box_account .form_container a.social_bt {
+  margin-bottom: 0;
+  min-width: inherit;
+}
+@media (max-width: 991px) {
+  .box_account .form_container a.social_bt {
+    margin-bottom: 5px;
+  }
+}
+.box_account .form_container .form-group {
+  margin-bottom: 10px;
+}
+.box_account .form_container #forgot_pw {
+  height: 100% !important;
+  min-height: inherit;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+/*============================================================================================*/
+/* ACCOUNT PAGE */
+/*============================================================================================*/
+
+
+.account_sidebar {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.account_sidebar h6 {
+  border-top: 1px solid #dddddd;
+  margin: 15px 0;
+  padding: 15px 0 0 0;
+}
+.account_sidebar label {
+  font-weight: 400;
+}
+.account_sidebar label small {
+  float: right;
+  color: #777;
+  padding-top: 3px;
+}
+.account_sidebar ul {
+  list-style: none;
+  padding: 5px 0 0 0;
+  margin: 0 0 15px 0;
+}
+.account_sidebar ul li {
+  margin-bottom: 5px;
+}
+.account_sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+.account_sidebar.version_2 {
+  border-bottom: 1px solid #ededed;
+  margin: 0 -15px 15px -15px;
+  padding: 0 15px;
+}
+.account_sidebar.version_2:last-child {
+  border-bottom: 1px solid #ededed;
+  margin: 0 -15px -15px -15px;
+  padding: 0 15px;
+}
+.account_sidebar.version_2 ul {
+  list-style: none;
+  padding: 5px 5px 0 5px;
+}
+.account_sidebar.version_2 h4 a {
+  display: block;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  color: #444;
+  padding: 8px 10px;
+  margin: -5px -5px 0 -5px;
+  line-height: 1;
+  position: relative;
+}
+.account_sidebar.version_2 h4 a:after {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: 'themify';
+  font-size: 14px;
+  font-size: 0.875rem;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.account_sidebar_col {
+  border: 1px solid #ededed;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.filter_col .account_sidebar h4 a:hover {
+  color: #8A2BE2;
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.account-sidebar-menu-active{
+ color: #8A2BE2 !important;
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+  transform: translateX(5px);  
+}
